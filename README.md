@@ -12,6 +12,7 @@ npm run dev
 
 ### Features
 - Fully responsive web app compatible with mobile, tablet and desktop devices
+- Includes news search Functionality
 - Fetches data from  `https://newsapi.org/`
 - All DOM elements within `cards-container` generated using `JS`
 
