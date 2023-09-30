@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>News Site</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer type="module"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="main-nav container flex">
+                <a href="#">
+                    <img 
+                        id="logo-image"
+                        src="./assets/thenews-text.svg"
+                        alt="logo-image"
+                    />
+                </a>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li class="hover-link nav-item">Sports</li>
+                        <li class="hover-link nav-item">Finance</li>
+                        <li class="hover-link nav-item">Politics</li>
+                        <li class="hover-link nav-item">Entertainment</li>
+                    </ul>
+                </div>
+                <div class="search-bar flex">
+                    <input type="text" placeholder = "Search Here" />
+                    <input type="button" value="Search" />
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="cards-container container flex" id="cards-container">
+            </div>
+        </main>
+        <template id="template-news-card">
+            <a href="#" id="article-title">
+            <div class="card">
+                <div class="card-header">
+                    <img
+                        src="https://via.placeholder.com/400x200"
+                        alt="news image"
+                    />
+                </div>
+                <div class="card-content flex">
+                    <h3 id="article-title">Title</h3>
+                    <h4 id="article-source">Source</h4>
+                    <h4 id="article-author">Author</h4>
+                    <p class="article-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+            </div>
+             </a>
+        </template>
+    </body>
+</html>
